@@ -31,3 +31,11 @@ def test_c2(setup,test_list_items,pass_Url): #def test_e2e(setup,test_list_items
   driver.get(pass_Url)
   shop_Page=login_page.login(test_list_items["username"],test_list_items["password"])
   #shop_Page.AddToCart(test_list_items["productname"]) #passing prd_name as an argument
+  print("successfully executed")
+  print("successfully executed")
+  print("successfully executed")
+  print("successfully executed")
+  print("successfully executed")
+
+  print("successfully executed")
+
