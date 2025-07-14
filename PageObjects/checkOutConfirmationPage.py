@@ -25,6 +25,8 @@ class CheckOut_Confirmation_Page(BrowserUtiles):
         print("succesfully clicked")
         print("succesfully clicked")
         print("succesfully clicked")
+        print("succesfully clicked")
+
 
     def location_select(self,country_name):
         self.driver.find_element(*self.country_text).send_keys(country_name)
