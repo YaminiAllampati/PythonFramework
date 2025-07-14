@@ -1,0 +1,51 @@
+pytest.ini => its like a config file, where we will give the tags names..etc
+utitles => to mention the common methods across the testcases using inheritence cncept
+
+to run the parllel test - we need to use plugin to install  => pip install pytest.xdist
+command to run => pytest -n auto  or pytest -n 2(incase of 2 tests parallely)
+
+to generate report -> need to intall => pip install pytest html
+
+command => pytest --html Reports(packagename)/reportname.html
+
+
+#to take ss of failed tc and attached to the report:
+ just ass the piece of code to conftest file
+
+ give command : pytest -m smoke -n auto --browser_name edge --html Reports/report.html --self-contained-html -v -s
+
+
+ #JENKINS
+ -> we can hardcode the browser name in the command while giving in the jenkins using choice parameter
+
+ -> we will give the command to the jenkins to run the tests(because everything will work based on commands as pom.xml in jvaa)
+
+
+
+ GIT/GIT HUB:(100 files) => only 80 files are commited => then git hub will only interact with these 80 files to push
+
+-> when we are trying to push the code => GIT HUB will only track the commited the code
+
++> Git Push => only accept the commited files
+
+staging - commit  - GitHub
+
+To start the process=>
+
+1)1st need to add the code to the staging
+2) need to commnit the code from stash and place to commit stage
+3) need to push the code from commited code to git
+
+
+git add * => it will add the files to staging & * => represents all the files
+
+git commit -m "msge"
+
+git remote add origin "git repo link" => to initiated connection between local repo to git repo =>
+
+git push origin master =>origin => location of git repo
+
+
+git clone  "repo link""=> to get the repo code for the first time to local & from next time only "git pull" will be used to update teh code at required places
+
+git pull origin master => to get the latest code from the repo
